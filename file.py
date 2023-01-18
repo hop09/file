@@ -20,7 +20,7 @@ logo="""
 class CheckUpdate:
     def __init__(self):
         self.update = 'https://raw.githubusercontent.com/hop09/file/main/version.txt'
-        self.cv = 1.1
+        self.cv = 1.2
         self._update()
 
 
