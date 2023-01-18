@@ -2,7 +2,7 @@
 try:
     import os,sys,time,requests,random,re
 except ModuleNotFoundError:
-    os.system('pip install requests')
+    os.system('pip install requests && python file.py')
 
 logo="""
 \t##     ##     #######     ########  
@@ -15,7 +15,7 @@ logo="""
 --------------------------------------------------
  Author: Muhammad Hamza
  Github: https://github.com/hop09
- Version: 1.1
+ Version: 1.2
 --------------------------------------------------"""
 class CheckUpdate:
     def __init__(self):
@@ -262,7 +262,7 @@ class loginM:
                         exit()
                 print(' Logged in successfully !')
                 time.sleep(1)
-                checkUpdate()
+                os.system('python file.py')
         except AttributeError:
             print('\n invalid cookie format !')
 CheckUpdate()
